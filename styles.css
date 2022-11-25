@@ -1,0 +1,146 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(210, 46%, 95%);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+#page {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container {
+    padding: 70px;
+    display: flex;
+    max-width: 1110px;
+}
+
+.daniel {
+    background-color: hsl(263, 55%, 52%);
+    flex-basis: 70%;
+    color: hsl(0, 0%, 81%);
+    position: relative;
+    z-index: 0;
+}
+
+.jonathan {
+    background-color: hsl(217, 19%, 35%);
+    flex-basis: 30%;
+    color: hsl(0, 0%, 81%);
+}
+
+.jeanette {
+    background-color: hsl(0, 0%, 100%);
+    flex-basis: 30%;
+    color: hsl(217, 19%, 35%);
+}
+
+.patrick {
+    background-color: hsl(219, 29%, 14%);
+    flex-basis: 70%;
+    color: hsl(0, 0%, 81%);
+}
+
+.kira {
+    background-color: hsl(0, 0%, 100%);
+    flex-basis: 25%;
+    color: hsl(217, 19%, 35%);
+}
+
+.container {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.2);
+    font-size: 13px;
+}
+
+.left-section {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 75%;
+}
+
+.left-top-section {
+    display: flex;
+    flex-basis: 50%;
+}
+
+.left-bottom-section {
+    display: flex;
+    flex-basis: 50%;
+    margin-top: 30px;
+}
+
+.left-section .container {
+    margin-right: 30px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    z-index: 3;
+    position: relative;
+}
+
+.header img {
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 1px solid hsl(0, 0%, 81%);
+}
+
+.container h4 {
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    z-index: 3;
+    position: relative;
+}
+
+.testimonial {
+    opacity: 70%;
+}
+
+.status {
+    opacity: 50%;
+}
+
+#quote {
+    position: absolute;
+    right: 15%;
+    top: 0;
+    z-index: 1;
+
+}
+
+@media (max-width: 375px) {
+    .main-container, .left-section, .left-top-section, .left-bottom-section {
+        display: block;
+    }
+
+    .left-bottom-section {
+        margin-top: 0;
+    }
+
+    .container {
+        width: 350px;
+        margin-top: 20px;
+    }
+
+    .left-section .container {
+        margin-right: 0;
+    }
+
+    .main-container {
+        padding: 0;
+    }
+
+    #quote {
+        visibility: hidden;
+    }
+}
